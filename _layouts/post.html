@@ -2,42 +2,38 @@
 layout: default
 ---
 
-{% include hero.html %}
+{% include base_path %}
 
-<div class="container">
-  <div class="row">
-    <div class="col col-8 push-2 col-d-10 col-m-12 push-d-1 push-m-0">
-      <!-- begin post -->
-      <article class="post animate">
+{% if page.image %}
+  <meta itemprop='og:image' content='{{ base_path }}{{ page.image }}'>
+{% endif %}
 
-        <div class="post__content">
+<div class='o-wrapper'>
+  <div class='o-grid'>
+    <div class='o-grid__col'>
+      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
+
+        <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
+
+        <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
+
+        <div class='c-content' itemprop='articleBody'>
+          {% include page-image.html %}
+
           {{ content }}
         </div>
 
-        {% include share.html %}
-
-        <div class="post-author">
-          <a href="{{site.baseurl}}/about/" class="post-author__image" aria-label="{{site.author.name}}">
-            <img class="lazy" data-src="{{site.baseurl}}{{site.author.avatar}}" alt="{{site.author.name}}">
-          </a>
-          <div class="post-author__info">
-            <h2 class="post-author__name"><a href="{{site.baseurl}}/about/">{{site.author.name}}</a></h2>
-            <p class="post-author__bio">{{site.author.bio}}</p>
-            <div class="post-author__meta">
-              {% for social in site.author-social %}
-              <a class="post-author__link" href="{{social.link}}" target="_blank"><i class="ion {{social.icon}}"></i></a>
-              {% endfor %}
-            </div>
-          </div>
+        <div class='c-tags'>
+          {% for tag in page.tags %}
+            <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>
+          {% endfor %}
         </div>
 
-      </article>
-      <!-- end post -->
-    </div>
+        <hr>
 
+        {% include disqus.html %}
+
+      </article>
+    </div>
   </div>
 </div>
-
-{% include related-posts.html %}
-
-{% if site.disqus-identifier %} {% include disqus-comments.html %} {% endif %}

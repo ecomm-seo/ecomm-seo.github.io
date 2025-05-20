@@ -1,55 +1,48 @@
-title: Stillpoint Software, Inc.
-logo: /assets/brand-logoblue.png
-description: We are nerds when it comes to software. Our mission is to address the B2B2C communication gap, across all systems and devices, to reach more people more effectively, both inside and outside the enterprise.
-baseurl: ""
-url: https://stillpoint.netlify.app
-hero:
-  hero__image:
-  hero__title: Stillpoint Software, Inc.
-  hero__description:
-author:
-  name:
-  bio:
-  image:
-  avatar:
-contact:
-  description: Have any questions? Reach out to us from our contact form and we will get back to you shortly.
-collections:
-  sections:
-    output: true
-  services:
-    output: true
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:       Type
+email:       ''
+description: ''
+baseurl:     '' # The subpath of your site, e.g. /blog
+url:         'https://type-jekyll.aspirethemes.com/' # The base hostname & protocol for your site
+twitter:     ''
+github:      ''
+instagram:   ''
+facebook:    ''
+
+markdown:  kramdown
+permalink: pretty
+paginate:  10
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll/tagging
+
 include:
   - _pages
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
+
+# Pages path
 defaults:
   - scope:
-      path: _pages
+      path: '_pages'
     values:
       permalink: /:basename:output_ext
-google-analytics: null
-author-social:
-  - link: https://github.com/stillpoint-software/
-    icon: ion-logo-github
-  - link: https://linkedin.com/company/stillpoint-software/
-    icon: ion-logo-linkedin
-social:
-  - icon: ion-logo-github
-    link: https://github.com/stillpoint-software/
-  - icon: ion-logo-linkedin
-    link: https://linkedin.com/company/stillpoint-software/
-markdown: kramdown
-permalink: pretty
-plugins:
-  - jekyll-paginate-v2
-  - jekyll-sitemap
-  - jekyll/tagging
-pagination:
-  enabled: false
-  per_page: 6 # Number of posts per page
-  permalink: "/page:num/"
-tag_page_dir: tag
-tag_page_layout: tag_page
-tag_permalink_style: pretty
-sass:
-  sass_dir: _sass
-  style: compressed
