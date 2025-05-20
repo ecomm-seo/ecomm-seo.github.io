@@ -1,0 +1,72 @@
+.carousel {
+  background: #fff;
+}
+
+.carousel-cell {
+  width: 30%;
+  height: 500px;
+  margin-left: 10px;
+  margin-right: 15px;
+  border: solid 1px $border-color;
+  border-radius: 10px;
+
+  .service__title {
+    margin: 10px 10px;
+    font-size: 1.25rem;
+    line-height: 34px;
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 20px;
+      line-height: 36px;
+    }
+  }
+
+  .service__text {
+    margin: 10px 10px;
+    font-size: 15px;
+    line-height: 25px;
+    color: $blue-gray;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    width: 90%;
+  }
+}
+.carousel-cell:before {
+  text-align: left;
+}
+
+.flickity-button {
+  background: $blue-gray;
+}
+
+.flickity-button:hover {
+  background: $brand-color;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+}
+
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -10px;
+
+  @media only screen and (max-width: $mobile) {
+    left: -15px
+  }
+}
+
+.flickity-prev-next-button.next {
+  right: -20px;
+
+  @media only screen and (max-width: $mobile) {
+    right: -15px
+  }
+}

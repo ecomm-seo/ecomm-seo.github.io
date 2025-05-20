@@ -1,0 +1,72 @@
+backend:
+  name: github
+  repo: stillpoint-software/stillpoint
+  branch: main 
+
+media_folder: "assets"
+
+collections:
+  - name: "settings"
+    label: "Settings"
+    files:
+      - label: "Site Settings"
+        name: "settings"
+        file: "_config.yml"
+        delete: false
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - { label: "Logo", name: "logo", widget: "image", required: true }
+          - { label: "Description", name: "description", widget: "string", required: true }
+          - { label: "Base URL", name: "baseurl", widget: "string", required: false }
+          - { label: "Site URL", name: "url", widget: "string", required: true }
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Image", name: "hero__image", widget: "image", required: true }
+              - { label: "Title", name: "hero__title", widget: "string", required: true }
+              - { label: "Description", name: "hero__description", widget: "text", required: true }
+              
+          - label: "Author"
+            name: "author"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string", required: true }
+              - { label: "Bio", name: "bio", widget: "text", required: true }
+              - { label: "Image", name: "image", widget: "image", required: true }
+              - { label: "Avatar", name: "avatar", widget: "image", required: true }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Description", name: "description", widget: "text", required: true }
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" 
+    folder: "_posts" 
+    sort: "date:desc" # Default is title:asc
+    create: true # Allow users to create new documents
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Post Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss", }
+      - { label: "Asset", name: "image", widget: "image", required: false }
+      - { label: "Tags", name: "tags", widget: "string", required: false }
+  - name: "sections" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Sections" 
+    folder: "_sections" 
+    create: true # Allow users to create new documents
+    slug: "{{order}}-{{slug}}"
+    fields:
+      - { label: "Layout - Left: image or Right: image", name: "layout", widget: "select", options: ["section_left", "section_right"], required: true}
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Sub Title", name: "subtitle", widget: "string", tagname: "h4", required: false }
+      - { label: "Image", name: "image", widget: "image", required: true }
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+
+ 

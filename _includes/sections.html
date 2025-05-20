@@ -1,0 +1,11 @@
+<div class="container section">
+    {% if site.sections.size > 0 %}
+    {% assign sortedsection = site.sections | sort: 'order'%}
+    {% for sorted in sortedsection %}
+    <div class="row section">
+        {{sorted}}
+    </div>
+    {% endfor %}
+    {% endif %}
+
+</div>
