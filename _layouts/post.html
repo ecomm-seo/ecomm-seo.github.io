@@ -3,6 +3,22 @@ layout: default
 ---
 
 {% include hero.html %}
+<style>
+.hero__image {
+  position: relative;
+  z-index: 10;
+  width: unset !important;
+  height: unset !important;
+  margin: 0 auto;
+}
+.hero__image::before {
+  content: none !important;
+  display: block;
+}
+.hero__image::after {
+  content: none !important;
+}
+</style>
 
 <!-- begin post -->
 <div class="container">
