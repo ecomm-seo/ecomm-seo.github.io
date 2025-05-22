@@ -1,16 +1,18 @@
 ---
 layout: page
-title: About
-permalink: /about/
-image: '/images/sanfran2.jpeg'
+title: "About ecomm-seo.github.io 🛍️📈"
+permalink: /about
+description: Learn about ecomm-seo.github.io, your trusted source for expert insights into e-commerce marketing, SEO strategies, paid ads, and content marketing tips.
+image: '/images/about.webp'
 ---
 
-Hi, my name is Pavlo Osadchyi. I'm a Software Engineer with 8 years of experience in full-stack software development, software architecture, team leadership and agile methodologies. 
+Welcome to **ecomm-seo.github.io** – your go-to hub for **e-commerce marketing** strategies that actually work. Whether you're a solopreneur or scaling an enterprise, our mission is to help you grow traffic, improve conversions, and build long-term success through:
 
-I like the idea outlined in the book [Pragmatic Programmer by David Thomas and Andrew Hunt](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/), that *rather than construction, software is more like gardening - it is more organic than concrete*. And in this sense, we, as Software Engineers, are also Software *Gardeners*. During my career, I've been learning how to write correct programs in constantly changing environments, *nurture* and *take care* of them so that they *grow* in something that makes end users (as well as maintainers) happy.
+- 🔍 **Search Engine Optimization (SEO)**
+- 💰 **Paid Advertising (Google Ads, Meta, etc.)**
+- 📱 **Social Media Marketing**
+- ✍️ **Content Marketing Strategies**
 
-I had a chance to work on many projects in teams of different sizes. I've got a solid grasp of such things like testing, debugging, how to write correct and maintainable code. I'm extremely product-driven.
-I always try to pick the best tool for the job, therefore I was able to work with numerous front-end and back-end web technologies such as: React, Ember.js, Ruby On Rails, Java Spring MVC, Elixir, Python Flask, Terraform, Kubernetes.
+Our content is backed by data, curated for clarity, and crafted to help marketers like you **stay ahead in a digital-first world**.
 
-![Garden]({{site.baseurl}}/images/garden_tools.jpg?style=centerme)
-*Photo from escalontimes.com*
+Let’s grow your e-commerce brand — smarter, not harder.

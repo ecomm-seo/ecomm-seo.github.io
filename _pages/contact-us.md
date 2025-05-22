@@ -1,9 +1,12 @@
 ---
 layout: page
-title: Contact
-permalink: /contact/
-image: '/images/contact.jpeg'
+title: "Contact Us 📬"
+permalink: /contact-us
+description: Get in touch with the team at ecomm-seo.github.io for collaboration, questions, or advertising inquiries.
+image: '/images/contact.webp'
 ---
+
+We’d love to hear from you!
 
 <div class="form-box">
   <div class="contact-head">
@@ -29,3 +32,9 @@ image: '/images/contact.jpeg'
     </div>
   </form>
 </div>
+
+Whether you have questions about our content, want to collaborate, or explore advertising opportunities, drop us a message:
+
+📧 **Email:** [ecommseo.blog@gmail.com](mailto:ecommseo.blog@gmail.com)
+
+We typically respond within 24–48 hours.
