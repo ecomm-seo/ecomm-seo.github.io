@@ -14,7 +14,29 @@
           </div>
         </div>
 
-        {% include social-link.html %}
+        <!-- {% include social-link.html %} -->
+                 <nav class="main-nav">
+          <div class="main-nav__box">
+            <div class="nav__icon-close">
+              <i class="ion ion-md-close"></i>
+            </div>
+            <div class="nav__title">Menu</div>
+            <ul class="nav__list list-reset">
+              <li class="nav__item">
+                <a href="{{ site.baseurl }}/disclaimer" class="nav__link">Disclaimer</a>
+              </li>
+              <li class="nav__item">
+                <a href="{{ site.baseurl }}/privacy-policy" class="nav__link">Privacy Policy</a>
+              </li>
+              <li class="nav__item">
+                <a href="{{ site.baseurl }}/terms-of-service" class="nav__link">Terms of Service</a>
+              </li>
+              <li class="nav__item">
+                <a href="{{ site.baseurl }}/affiliate-discloser" class="nav__link">Affiliate Discloser</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.title}}</a>
       </div>
     </div>
