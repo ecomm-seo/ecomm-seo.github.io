@@ -15,12 +15,11 @@
         </div>
 
         <!-- {% include social-link.html %} -->
-                 <nav class="main-nav">
+
+        <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.title}}</a>
+
+        <nav class="main-nav justify-content-center">
           <div class="main-nav__box">
-            <div class="nav__icon-close">
-              <i class="ion ion-md-close"></i>
-            </div>
-            <div class="nav__title">Menu</div>
             <ul class="nav__list list-reset">
               <li class="nav__item">
                 <a href="{{ site.baseurl }}/disclaimer" class="nav__link">Disclaimer</a>
@@ -37,7 +36,6 @@
             </ul>
           </div>
         </nav>
-        <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.title}}</a>
       </div>
     </div>
   </div>
