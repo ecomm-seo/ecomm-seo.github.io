@@ -11,18 +11,18 @@ blog-theme: light # By default, Atega theme uses a 'light' color scheme, to chan
 # Author Settings
 author:
   name: Mandy Ogram
-  image: '/images/Mandy-ogram-author.webp'
+  image: '/images/Mandy-Ogram-author.webp'
 
 
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Hi, I'm <span class="hero__name">Mandy ogram</span>.
+  hero__title: Hi, I'm <span class="hero__name">Mandy Ogram</span>.
   hero__job: SEO Specialist
   hero__description: I help e-commerce brands grow their organic traffic and sales.
   hero__button__text: Read about me
   hero__button__link: '/about'
-  hero__image: '/images/Mandy-ogram-author.webp'
+  hero__image: '/images/Mandy-Ogram-author.webp'
 
 
 #-------------------------------
@@ -36,7 +36,7 @@ hero:
 #-------------------------------
 # Contact Settings
 contact:
-  email: Mandy.ogram@gmail.com # Add your email for contant form
+  email: Mandy.Ogram@gmail.com # Add your email for contant form
 
 
 # NOTE
@@ -48,8 +48,8 @@ contact:
 # Example of adding a new link to the footer - {icon: "ion-logo-facebook", link: "https://facebook.com"}
 # Other icons can be found at https://ionicons.com/v4/
 social:
-- {icon: "ion-logo-twitter", link: "https://twitter.com/Mandyogram"}
-- {icon: "ion-logo-github", link: "https://github.com/Mandyogram"}
+- {icon: "ion-logo-twitter", link: "https://twitter.com/MandyOgram"}
+- {icon: "ion-logo-github", link: "https://github.com/MandyOgram"}
 # - {icon: "ion-logo-youtube", link: "https://youtube.com"}
 # - {icon: "ion-logo-pinterest", link: "https://pinterest.com"}
 # - {icon: "ion-logo-codepen", link: "https://codepen.io"}
@@ -58,7 +58,7 @@ social:
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: Mandyogram # add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: MandyOgram # add your shortname for Disqus Comment. For example mr-brown
 
 
 #-------------------------------
