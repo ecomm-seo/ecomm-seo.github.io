@@ -2,8 +2,7 @@
 layout: post
 title: "Which ecommerce platform is best for SEO? See what SEO pros recommend in 2025."
 description: "Explore the best ecommerce platforms for SEO in 2025. Learn how to choose the right platform to boost your e-commerce SEO performance."
-categories: ecommerce seo
-tags: [e-commerce seo, best ecommerce platform, seo for online stores, ecommerce website builders]
+categories: ["ecommerce seo"]
 image:  '/images/featured_Which-ecommerce-platform-is-best-for-SEO.webp'
 ---
 
